@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/output-style.css" />
     <link rel="stylesheet" href="css/syle.css" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-icons.css" rel="stylesheet" />
@@ -72,15 +73,6 @@
       </div>
     </nav>
 
-    <!-- Back to top button -->
-    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
-      class="hidden fixed z-90 bottom-8 right-8 border-0 w-10 h-10 rounded-full drop-shadow-md bg-slate-600 text-white text-base font-bold">&#x25B2;</button>
-    
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-
     <header id="home" class="">
       <!-- Hero -->
       <div class="w-[95vw] h-[85vh] my-1 mx-2 sm:mx-5 rounded-xl relative flex flex-col items-center justify-center text-center text-white py-0 px-3 shadow-lg">
@@ -142,10 +134,10 @@
     </header>
 
     <!-- about -->
-    <section class="mt-10">
+    <section class="my-32">
       <div class="container mx-auto sm:px-24 pt-5">
-        <div class="flex flex-wrap  items-center">
-          <div class="md:w-1/2 pr-4 pl-4">
+        <div class="flex flex-wrap items-center">
+          <div class="md:w-1/2 px-4">
             <div class=" text-center drop-shadow-lg"> 
               <img
                 class="max-w-full h-auto rounded-lg max-height-600"
@@ -164,82 +156,69 @@
       </div>
     </section>
 
-    <section class="mt-24">
-      <div class="min-h-[75vh] sm:px-24">
-        <div class="container mx-auto sm:px-4">
-          <div class="flex flex-wrap ">
-            <div class="lg:w-1/3 pr-4 pl-4 mt-5 drop-shadow-lg">
-              <h1 class="font-bold text-4xl text-[#344767] lg:mb-6" spellcheck="false">Booking and Rates</h1>
-              <p class="lg:mb-0 mb-5 text-lg text-[#67748e]">Don't miss our promos! Book for cheap and affordable transient house now!</p>
+    <!-- client says -->
+    <section class="mt-20 py-32 bg-[#ececec]">
+      <div class="container mx-auto sm:px-16 pt-5">
+        <div class="w-full flex flex-wrap items-center">
+          <div class="md:w-2/5 w-full px-4">
+            <div class="md:h-[90vh] h-[40vh] w-full bg-gradient-to-r from-slate-800 to-slate-900 rounded-xl drop-shadow-lg">
+              <div class="h-full mx-16 flex flex-col justify-center">
+                <div class="h-16 w-16 rounded-full bg-white shadow text-center mb-4">
+                  <i class="fas fa-quote-right text-slate-800 text-xl mt-5" aria-hidden="true"></i>
+                </div>
+                <h2 class="text-white font-bold text-4xl">What our Clients Are Saying</h2>
+              </div>
             </div>
-            <div class="lg:w-full pr-4 pl-4 lg:ps-12 pe-0">
-              <div class="flex flex-wrap ">
-                <div class="lg:w-1/4 pr-4 pl-4 w-1/2"> <img class="border-radius-lg shadow mt-0 mt-lg-7 w-full"
-                    src="https://images.unsplash.com/photo-1600760380065-2fcdc9e73007?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBvb2x8ZW58MHwyfDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="">
-                  <div class="mt-4 flex">
-                    <div class="lg:ms-4">
-                      <h6 class="text-sm font-normal mb-0">Relax</h6>
-                      <h5 class="font-weight-bolder">Private Pool</h5> <button
-                        class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-icon-only btn-2 btn-rounded text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white bg-white hover:bg-gray-900"
-                        type="button"> <span class="btn-inner--icon"><i class="fa fa-arrow-right"
-                            aria-hidden="true"></i></span> </button>
+          </div>
+          <div class="md:w-3/5 w-full pr-4 pl-4 md:mb-0 mb-4 ps-5 md:mt-0 mt-4">
+            <div class="md:w-[70%] w-full mx-auto">
+              <div class="sliderAx h-auto">
+                <div id="slider-1" class="container mx-auto">
+                  <div class="h-auto text-black pt-24 px-10">
+                    <div class="text-center">
+                      <div class="flex justify-center py-5">
+                        <img src="./assets/img/testimonial1.jpg" class="rounded-xl w-20 h-20 drop-shadow-lg" alt="testimonial1">
+                      </div>
+                      <p class="text-xl text-[#67748e] mb-10 leading-none">"The booking process was quick and easy, and the house we stayed in was even better than we expected. We had a wonderful
+                      time and would definitely recommend this website to anyone looking for a relaxing getaway."</p>
+                      <p class="font-bold text-sm text-[#3a416f]">Dana Mckinley</p>
                     </div>
                   </div>
+                  <br>
                 </div>
-                <div class="lg:w-1/4 pr-4 pl-4 w-1/2"> <img class="border-radius-lg shadow mt-0 w-full"
-                    src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8MnwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="">
-                  <div class="mt-4 flex">
-                    <div class="ms-3">
-                      <h6 class="text-sm font-normal mb-0">Food</h6>
-                      <h5 class="font-weight-bolder">Restaurants</h5> <button
-                        class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-icon-only btn-2 btn-rounded text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white bg-white hover:bg-gray-900"
-                        type="button"> <span class="btn-inner--icon"><i class="fa fa-arrow-right"
-                            aria-hidden="true"></i></span> </button>
+              
+                <div id="slider-2" class="container mx-auto">
+                  <div class="h-auto text-black pt-24 px-10">
+                    <div class="text-center">
+                      <div class="flex justify-center py-5">
+                        <img src="./assets/img/testimonial2.jpg" class="rounded-xl w-20 h-20 drop-shadow-lg" alt="testimonial1">
+                      </div>
+                      <p class="text-xl text-[#67748e] mb-10 leading-none">"We found the perfect place to stay on this website - it had all the amenities we needed and was in a beautiful
+                      location. The owners were also very helpful and made our stay even better. Highly recommend!"</p>
+                      <p class="font-bold text-sm text-[#3a416f] ">Alexander Davis</p>
                     </div>
-                  </div> <img class="border-radius-lg shadow mt-0 mt-4 w-full"
-                    src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1144&amp;q=80"
-                    alt="">
+                  </div>
+                  <br>
                 </div>
-                <div class="lg:w-1/4 pr-4 pl-4 w-1/2 lg:mt-0 mt-n12">
-                  <div class="mt-4 flex mt-lg-n6">
-                    <div class="ms-3">
-                      <h6 class="text-sm font-normal mb-0">Business</h6>
-                      <h5 class="font-weight-bolder">Offices</h5> <button
-                        class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-icon-only btn-2 btn-rounded text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white bg-white hover:bg-gray-900"
-                        type="button"> <span class="btn-inner--icon"><i class="fa fa-arrow-right"
-                            aria-hidden="true"></i></span> </button>
+
+                <div id="slider-3" class="container mx-auto">
+                  <div class="h-auto text-black pt-24 px-10">
+                    <div class="text-center">
+                      <div class="flex justify-center py-5">
+                        <img src="./assets/img/testimonial3.jpg" class="rounded-xl w-20 h-20 drop-shadow-lg" alt="testimonial1">
+                      </div>
+                      <p class="text-xl mb-10 text-[#67748e] leading-none">"I had an amazing experience booking through this website! The properties were accurately described, and the customer
+                      service was top-notch. Would definitely use again!"</p>
+                      <p class="font-bold text-sm text-[#3a416f]">Isabella Johnson</p>
                     </div>
-                  </div> <img class="border-radius-lg shadow mt-0 w-full"
-                    src="https://images.unsplash.com/photo-1584536318461-2ee56bc042f1?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-                    alt="">
-                  <div class="mt-4 flex border border-radius-lg py-4">
-                    <div class="px-4">
-                      <blockquote class="text-sm font-normal mb-0">" I always felt like I could do anything. That’s
-                        the main thing people are controlled by! Thoughts- their perception of themselves!&nbsp;
-                      </blockquote>
-                    </div>
-                  </div> <img class="border-radius-lg shadow mt-4 w-full"
-                    src="https://images.unsplash.com/photo-1616627561839-074385245ff6?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfDJ8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="">
+                  </div>
+                  <br>
                 </div>
-                <div class="lg:w-1/4 pr-4 pl-4 w-1/2">
-                  <div class="mt-4 flex mt-lg-n6"> </div> <img class="border-radius-lg shadow mt-0 w-full"
-                    src="https://images.unsplash.com/photo-1636737249734-f180af754ab8?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-                    alt="">
-                  <div class="mt-4 flex">
-                    <div class="ms-3">
-                      <h6 class="text-sm font-normal mb-0">Relax</h6>
-                      <h5 class="font-weight-bolder">Spa &amp; Massage</h5> <button
-                        class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-icon-only btn-2 btn-rounded text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white bg-white hover:bg-gray-900"
-                        type="button"> <span class="btn-inner--icon"><i class="fa fa-arrow-right"
-                            aria-hidden="true"></i></span> </button>
-                    </div>
-                  </div> <img class="border-radius-lg shadow mt-4 w-full"
-                    src="https://images.unsplash.com/photo-1518860308377-800f02d5498a?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
-                    alt="">
-                </div>
+              </div>
+              <div class="flex justify-between w-20 mx-auto pb-2">
+                <button id="sButton1" onclick="sliderButton1()" class="bg-slate-300 rounded-full w-4 p-2"></button>
+                <button id="sButton2" onclick="sliderButton2()" class="bg-slate-300 rounded-full w-4 p-2"></button>
+                <button id="sButton3" onclick="sliderButton3()" class="bg-slate-300 rounded-full w-4 p-2"></button>
               </div>
             </div>
           </div>
@@ -247,196 +226,128 @@
       </div>
     </section>
 
-    <!-- 
-    <section class="position-relative overflow-hidden py-5">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="bg-gradient-dark border-radius-lg d-flex align-items-center h-100 px-5 py-lg-0 py-5 mx-3">
-            <div>
-              <div class="icon icon-shape rounded-circle bg-white shadow text-center mb-4"> <i
-                  class="fas opacity-10 fa-quote-right text-dark" aria-hidden="true"></i> </div>
-              <h2 class="text-white"> What our Clients Are Saying</h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div>
-            <div id="carouselExampleIndicators" class="carousel slide pt-7 pb-11" data-bs-ride="carousel">
-              <ol class="carousel-indicators pb-7"> <a href="javascript:;"> <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-4.jpg" alt="..."
-                    class="avatar avatar-sm avatar-scale-up shadow border-radius-lg border-0"
-                    data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"> <span
-                    class="text-light mx-2">|</span> </a> <a href="javascript:;"> <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-3.jpg" alt="..."
-                    class="avatar avatar-sm avatar-scale-up shadow border-radius-lg border-0"
-                    data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"> <span
-                    class="text-light mx-2">|</span> </a> <a href="javascript:;"> <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg" alt="..."
-                    class="avatar avatar-sm avatar-scale-up shadow border-radius-lg border-0 active"
-                    data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true"> </a> </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-7 mx-auto text-center"> <img class="w-50 mb-4 avatar avatar-xl"
-                          src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-4.jpg" alt="">
-                        <p class="lead">"We’re not always in the position that we want to be at. We’re constantly growing.
-                          We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our
-                          dreams." </p>
-                        <div class="author justify-content-center">
-                          <div class="name ps-2"> <span>John Down</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-7 mx-auto text-center"> <img class="w-50 mb-4 avatar avatar-xl"
-                          src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-3.jpg" alt="">
-                        <p class="lead">"We’re not always in the position that we want to be at. We’re constantly growing.
-                          We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our
-                          dreams."</p>
-                        <div class="author justify-content-center">
-                          <div class="name ps-2"> <span>Marcell Glock</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item active">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-7 mx-auto text-center"> <img class="w-50 mb-4 avatar avatar-xl"
-                          src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg" alt="">
-                        <p class="lead">"We’re not always in the position that we want to be at. We’re constantly growing.
-                          We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our
-                          dreams." </p>
-                        <div class="author justify-content-center">
-                          <div class="name ps-2"> <span>Mathew Goat</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+     <!-- Booking and rates -->
+    <section class="pt-32 md:mb-10 mb-0">
+      <div class="flex flex-wrap justify-center text-center">
+        <div class="lg:w-1/3 md:px-0 px-4 mt-5 drop-shadow-lg">
+          <h1 class="font-bold text-4xl text-[#344767] lg:mb-3" spellcheck="false">Booking <span class="text-yellow-500">and</span> Rates</h1>
+          <p class="text-lg text-[#67748e]">Don't miss our promos! Book for cheap and affordable transient house
+            now!</p>
         </div>
       </div>
     </section>
-    <section class="py-0">
-      <div class="row">
-        <div class="col-6 text-center mx-auto mt-5">
-          <h2 spellcheck="false">See our latest blogs</h2>
-          <p class="mb-0">See what people from all around the world are saying about our website. </p>
+    <section class="py-6">
+      <div class="container mx-auto sm:px-4">
+        <div class="flex flex-wrap ">
+          <!-- t-1 -->
+          <div class="lg:w-1/3 pr-4 pl-4 lg:mb-0 mb-4">
+            <div class="relative flex flex-col min-w-0 rounded-xl break-words border bg-white drop-shadow-lg">
+              <div
+                class="mx-4 mt-4 relative z-index-1">
+                <a href="ratesBookings.html" class="block">
+                  <img
+                    src="./assets/img/t-1/t-1-1.png"
+                    class="min-w-full h-[200px] object-cover rounded-xl">
+                </a> 
+              </div>
+              <div class="flex-auto p-6 pt-3">
+                <span class="text-gradient text-yellow-500 uppercase text-xs font-bold my-2">Transient 1</span>
+                <a href="ratesBookings.html" class="mb-3 h5 block text-darker">City Camp - Lower Quarry</a>
+                <p class="card-description mb-4">
+                  <li>1-5 pax</li>
+                  <li>Fully Furnished Transient House</li>
+                  <li>Hot & Cold Shower</li>
+                  <li>Parking Space</li>
+                  <li>Free Wifi</li>
+                  <li>Cabled TV</li>
+                  <li>10-minute drive from Burnham, Session Road, Camp John Hay</li>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- modal -->
+          <!-- <input type="checkbox" id="t-1-modal" class="modal-toggle" />
+          <div class="modal">
+            <div class="modal-box relative">
+              <label for="t-1-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+              <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+              <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+            </div>
+          </div> -->
+
+
+          
+          <!-- t-2 -->
+          <div class="lg:w-1/3 pr-4 pl-4 lg:mb-0 mb-4">
+            <div class="relative flex flex-col min-w-0 rounded-xl break-words border bg-white drop-shadow-lg">
+              <div class="mx-4 mt-4 relative z-index-1">
+                <a href="ratesBookings.html" class="block">
+                  <img
+                    src="./assets/img/t-2/t-2-1.png"
+                    class="min-w-full h-[200px] object-cover rounded-xl">
+                </a>
+              </div>
+              <div class="flex-auto p-6 pt-3">
+                <span class="text-gradient text-yellow-500 uppercase text-xs font-bold my-2">Transient 2</span> 
+                <a href="ratesBookings.html" class="mb-3 h5 block text-darker">Engineers Hill</a>
+                <p class="card-description mb-4">
+                  <li>1-5 pax</li>
+                  <li>Fully Furnished Transient House</li>
+                  <li>Hot & Cold Shower</li>
+                  <li>Parking Space</li>
+                  <li>Free Wifi</li>
+                  <li>Cabled TV</li>
+                  <li>10-minute drive from Burnham, Session Road, Camp John Hay</li>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- t-3 -->
+          <div class="lg:w-1/3 pr-4 pl-4 lg:mb-0 mb-4">
+            <div class="relative flex flex-col min-w-0 rounded-xl break-words border bg-white drop-shadow-lg">
+              <div class="mx-4 mt-4 relative z-index-1">
+                <a href="ratesBookings.html" class="block">
+                  <img
+                    src="./assets/img/t-3/t-3-1.png"
+                    class="min-w-full h-[200px] object-cover rounded-xl">
+                </a>
+              </div>
+              <div class="flex-auto p-6 pt-3"> 
+                <span class="text-gradient text-yellow-500 uppercase text-xs font-bold my-2">Transient 3</span> 
+                <a href="ratesBookings.html" class="mb-3 h5 block text-darker">City Camp - Upper Quarry</a>
+                <p class="card-description mb-4"> 
+                  <li>1-5 pax</li>
+                  <li>Fully Furnished Transient House</li>
+                  <li>Hot & Cold Shower</li>
+                  <li>Parking Space</li>
+                  <li>Free Wifi</li>
+                  <li>Cabled TV</li>
+                  <li>10-minute drive from Burnham, Session Road, Camp John Hay</li>
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+      <div class="flex justify-center md:my-10 my-3">
+        <a href="ratesBookings.html" class="btn border-0 bg-gradient-to-r from-yellow-500 to-orange-500 text-white">More</a>
       </div>
     </section>
-    <section class="py-6 bg-gray-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-lg-0 mb-4">
-            <div class="card">
-              <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1"> <a href="javascript:;" class="d-block">
-                  <img
-                    src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"
-                    class="img-fluid border-radius-lg"> </a> </div>
-              <div class="card-body pt-3"> <span
-                  class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">Massage</span> <a
-                  href="javascript:;" class="card-title h5 d-block text-darker">The benefits of massage</a>
-                <p class="card-description mb-4"> Use border utilities to quickly style the border and border-radius of an
-                  element. Great for images, buttons. </p>
-                <div class="author align-items-center"> <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/team-2.jpg" alt="..."
-                    class="avatar shadow">
-                  <div class="name ps-3"> <span>Mathew Glock</span>
-                    <div class="stats"> <small>Posted on 28 February</small> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-lg-0 mb-4">
-            <div class="card">
-              <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1"> <a href="javascript:;" class="d-block">
-                  <img
-                    src="https://images.unsplash.com/photo-1623718649591-311775a30c43?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"
-                    class="img-fluid border-radius-lg"> </a> </div>
-              <div class="card-body pt-3"> <span
-                  class="text-gradient text-info text-uppercase text-xs font-weight-bold my-2">Swimming</span> <a
-                  href="javascript:;" class="text-darker card-title h5 d-block">Best swimming resorts in Spain</a>
-                <p class="card-description mb-4"> Use border utilities to quickly style the border and border-radius of an
-                  element. Great for images, buttons. </p>
-                <div class="author align-items-center"> <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/ivana-square.jpg" alt="..."
-                    class="avatar shadow">
-                  <div class="name ps-3"> <span>Chriss Smahos</span>
-                    <div class="stats"> <small>Posted 2 min ago</small> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-lg-0 mb-4">
-            <div class="card">
-              <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1"> <a href="javascript:;" class="d-block">
-                  <img
-                    src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2074&amp;q=80"
-                    class="img-fluid border-radius-lg"> </a> </div>
-              <div class="card-body pt-3"> <span
-                  class="text-gradient text-warning text-uppercase text-xs font-weight-bold my-2">Hotels</span> <a
-                  href="javascript:;" class="text-darker card-title h5 d-block">Hotels with beautiful views</a>
-                <p class="card-description mb-4"> Use border utilities to quickly style the border and border-radius of an
-                  element. Great for images, buttons. </p>
-                <div class="author align-items-center"> <img
-                    src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/marie.jpg" alt="..."
-                    class="avatar shadow">
-                  <div class="name ps-3"> <span>Elijah Miller</span>
-                    <div class="stats"> <small>Posted now</small> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- <footer class="footer py-5 bg-gradient-dark position-relative overflow-hidden"> <img
-        src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/shapes/waves-white.svg"
-        alt="pattern-lines" class="position-absolute start-0 top-0 w-100 opacity-6">
-      <div class="container position-relative z-index-1">
-        <div class="row">
-          <div class="col-lg-4 me-auto mb-lg-0 mb-4 text-lg-start text-center">
-            <h6 class="text-white font-weight-bolder text-uppercase mb-lg-4 mb-3">Hotels</h6>
-            <ul class="nav flex-row ms-n3 align-items-center mb-4 mt-sm-0">
-              <li class="nav-item"> <a class="nav-link text-white opacity-8" href="javascript:;"> Home </a> </li>
-              <li class="nav-item"> <a class="nav-link text-white opacity-8" href="javascript:;"> About </a> </li>
-              <li class="nav-item"> <a class="nav-link text-white opacity-8" href="javascript:;"> Blog </a> </li>
-              <li class="nav-item"> <a class="nav-link text-white opacity-8" href="javascript:;"> Services </a> </li>
-            </ul>
-            <p class="text-sm text-white opacity-8 mb-0"> Copyright ©
-              <script>
-                document.write(new Date().getFullYear())
-              </scrip>2023 Soft by Creative Tim.
-            </p>
-          </div>
-          <div class="col-lg-6 ms-auto text-lg-end text-center">
-            <p class="mb-5 text-lg text-white font-weight-bold"> The reward for getting on the stage is fame. The price of
-              fame is you can’t get off the stage. </p> <a href="javascript:;" class="text-white me-xl-4 me-4 opacity-5">
-              <span class="fab fa-dribbble" aria-hidden="true"></span> </a> <a href="javascript:;"
-              class="text-white me-xl-4 me-4 opacity-5"> <span class="fab fa-twitter" aria-hidden="true"></span> </a> <a
-              href="javascript:;" class="text-white me-xl-4 me-4 opacity-5"> <span class="fab fa-pinterest"
-                aria-hidden="true"></span> </a> <a href="javascript:;" class="text-white opacity-5"> <span
-                class="fab fa-github" aria-hidden="true"></span> </a>
-          </div>
-        </div>
-      </div>
-    </footer> -->
+  
     
     <div class="p-36">
       </div>
+
+    <!-- Back to top button -->
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+      class="hidden fixed z-90 bottom-8 right-8 border-0 w-10 h-10 rounded-full drop-shadow-md bg-slate-600 text-white text-base font-bold">&#x25B2;</button>
+    
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
 
     <footer class="footer p-10 bg-gradient-to-r from-cyan-900 to-slate-900 text-neutral-content">
       <div>
@@ -454,16 +365,16 @@
         <div class="grid grid-flow-row gap-4 text-neutral-content">
           <ul class="flex list-none pl-0 flex-col mb-4 sm:mt-0">
             <li class="">
-              <a class="inline-block py-2 px-4 no-underline" href="javascript:;"> Home </a>
+              <a href="index.html" class="inline-block py-2 px-4 no-underline hover:text-white"> Home </a>
             </li>
             <li class="">
-              <a class="inline-block py-2 px-4 no-underline" href="javascript:;"> Rates and Bookings </a>
+              <a href="ratesBookings.html" class="inline-block py-2 px-4 no-underline hover:text-white"> Rates and Bookings </a>
             </li>
             <li class="">
-              <a class="inline-block py-2 px-4 no-underline" href="javascript:;"> About Us </a>
+              <a href="aboutContact.html" class="inline-block py-2 px-4 no-underline hover:text-white"> About Us </a>
             </li>
             <li class="">
-              <a class="inline-block py-2 px-4 no-underline" href="javascript:;"> Contact Us </a>
+              <a href="aboutContact.html" class="inline-block py-2 px-4 no-underline hover:text-white"> Contact Us </a>
             </li>
           </ul>
         </div>
@@ -471,30 +382,15 @@
 
       <div>
         <span class="footer-title">Social</span>
-        <div class="grid grid-flow-col gap-4">
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-              <path
-                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
-              </path>
-            </svg>
-          </a>
-      
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-              <path
-                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
-              </path>
-            </svg>
-          </a>
-      
-          <a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+        <div class="grid grid-flow-col">
+          <a href="https://www.facebook.com/profile.php?id=100090181593953">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current hover:fill-white">
               <path
                 d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
               </path>
             </svg>
           </a>
+          <p>ollow us for more details.</p>
         </div>
       </div>
     </footer>
