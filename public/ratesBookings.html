@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="css/output-style.css" />
     <link rel="stylesheet" href="css/syle.css" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-      <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-      <link href="https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-icons.css" rel="stylesheet" />
-      <link href="https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-svg.css" rel="stylesheet" />
-      <link rel="stylesheet" href="./assets/css/theme.css">
-      <link rel="stylesheet" href="./assets/css/loopple/loopple.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body class="null">
@@ -39,7 +34,7 @@
                 </a>
                 <ul class="z-20 bg-white p-2 drop-shadow-lg">
                   <li><a href="aboutContact.html" onclick="route()">About Us</a></li>
-                  <li><a href="aboutContact.html" onclick="route()">Contact Us</a></li>
+                  <li><a href="aboutContact.html#contact" onclick="route()">Contact Us</a></li>
                 </ul>
               </li>
             </ul>
@@ -60,22 +55,749 @@
                 </svg>
               </a>
               <ul class="z-20 bg-white p-2 drop-shadow-lg">
-                <li><a href="aboutContact.html">About Us</a></li>
-                <li><a href="aboutContact.html">Contact Us</a></li>
+                <li><a href="aboutContact.html" onclick="route()">About Us</a></li>
+                <li><a href="aboutContact.html#contact" onclick="route()">Contact Us</a></li>
               </ul>
             </li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn border-0 bg-gradient-to-r from-yellow-500 to-orange-500 text-white">Booking</a>
+          <a href="#booking-and-rates" class="btn border-0 bg-gradient-to-r from-yellow-500 to-orange-500 text-white">Booking</a>
         </div>
       </div>
     </nav>
 
     
 
-    <div class="p-36">
-    </div>
+    <!-- Booking and rates -->
+    <section id="booking-and-rates" class="pt-16 md:mb-10 mb-0" data-aos="fade-down">
+      <div class="flex flex-wrap justify-center text-center">
+        <div class="lg:w-1/3 md:px-0 px-4 mt-5 drop-shadow-lg">
+          <h1 class="font-bold text-4xl text-[#344767] lg:mb-3" spellcheck="false">Booking <span
+              class="text-yellow-500">and</span> Rates</h1>
+          <p class="text-lg text-[#67748e]">Don't miss our promos! Book for cheap and affordable transient house
+            now!</p>
+        </div>
+      </div>
+    </section>
+    <section class="py-6">
+      <div class="container mx-auto sm:px-4">
+        <div class="flex flex-wrap justify-center">
+          <!-- t-1 -->
+          <div id="t-1" class="lg:w-1/2 pr-4 pl-4 lg:mb-10 mb-4" data-aos="fade-right">
+            <div class="relative flex flex-col min-w-0 rounded-xl break-words border bg-white drop-shadow-lg">
+              <div class="mx-4 mt-4 relative z-index-1">
+                <label for="t-1-modal" class="block hover:cursor-pointer">
+                  <img src="./assets/img/t-1/t-1-1.png" class="min-w-full h-[300px] object-cover rounded-xl">
+                </label>
+              </div>
+              <div class="flex-auto p-6 pt-3">
+                <span class="text-gradient text-yellow-500 uppercase text-xs font-bold my-2">Transient 1</span>
+                <label for="t-1-modal" class="mb-3 h5 block text-darker hover:cursor-pointer">City Camp - Lower Quarry</label>
+                <p class="card-description mb-4">
+                  <li>1-2 pax</li>
+                  <li>1 Bed</li>
+                  <li>2 Chairs</li>
+                  <li>1 TV</li>
+                  <li>1 Cabinet</li>
+                  <li>Kitchen Sink</li>
+                  <li>Kitchen Cabinet</li>
+                  <li>Electric Fan</li>
+                  <li>Bathroom with Hot & Cold Shower</li>
+                  <li>Wifi</li>
+                  <li>10 Mins to Burnham Park and Market</li>
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- t-2 -->
+          <div id="t-2" class="lg:w-1/2 pr-4 pl-4 lg:mb-10 mb-4" data-aos="fade-left">
+            <div class="relative flex flex-col min-w-0 rounded-xl break-words border bg-white drop-shadow-lg">
+              <div class="mx-4 mt-4 relative z-index-1">
+                <label for="t-2-modal" class="block hover:cursor-pointer">
+                  <img src="./assets/img/t-2/t-2-1.png" class="min-w-full h-[300px] object-cover rounded-xl">
+                </label>
+              </div>
+              <div class="flex-auto p-6 pt-3">
+                <span class="text-gradient text-yellow-500 uppercase text-xs font-bold my-2">Transient 2</span>
+                <label for="t-2-modal" class="mb-3 h5 block text-darker hover:cursor-pointer">Engineers Hill</label>
+                <p class="card-description mb-4">
+                  <li>2-3 pax</li>
+                  <li>Refrigerator</li>
+                  <li>Television</li>
+                  <li>Electric Fan</li>
+                  <li>1 Double Deck Bed</li>
+                  <li>1 Extra Foam</li>
+                  <li>Bathroom with Shower</li>
+                  <li>Wifi</li>
+                  <li>Parking Space</li>
+                  <li>15-20 Mins to Burnham Park and Market</li>
+                </p>
+              </div>
+            </div>
+          </div>
+    
+    
+          <!-- t-3 -->
+          <div id="t-3" class="lg:w-1/2 pr-4 pl-4 lg:mb-10 mb-4" data-aos="fade-right">
+            <div class="relative flex flex-col min-w-0 rounded-xl break-words border bg-white drop-shadow-lg">
+              <div class="mx-4 mt-4 relative z-index-1">
+                <label for="t-3-modal" class="block hover:cursor-pointer">
+                  <img src="./assets/img/t-3/t-3-1.png" class="min-w-full h-[300px] object-cover rounded-xl">
+                </label>
+              </div>
+              <div class="flex-auto p-6 pt-3">
+                <span class="text-gradient text-yellow-500 uppercase text-xs font-bold my-2">Transient 3</span>
+                <label for="t-3-modal" class="mb-3 h5 block text-darker hover:cursor-pointer">City Camp - Upper Quarry</label>
+                <p class="card-description mb-4">
+                  <li>3-8 pax</li>
+                  <li>2 Rooms</li>
+                  <li>1 Double Deck</li>
+                  <li>1 Extra Foam</li>
+                  <li>3 Beds</li>
+                  <li>Television</li>
+                  <li>Coffee Bar</li>
+                  <li>Kitchen</li>
+                  <li>Wifi</li>
+                  <li>Bathroom with Shower</li>
+                  <li>10 Mins to Burnham Park and Market</li>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- t-4 -->
+          <div id="t-4" class="lg:w-1/2 pr-4 pl-4 lg:mb-10 mb-4" data-aos="fade-left">
+            <div class="relative flex flex-col min-w-0 rounded-xl break-words border bg-white drop-shadow-lg">
+              <div class="mx-4 mt-4 relative z-index-1">
+                <label for="t-4-modal" class="block hover:cursor-pointer">
+                  <img src="./assets/img/t-4/t-4-1.png" class="min-w-full h-[300px] object-cover rounded-xl">
+                </label>
+              </div>
+              <div class="flex-auto p-6 pt-3">
+                <span class="text-gradient text-yellow-500 uppercase text-xs font-bold my-2">Transient 4</span>
+                <label for="t-4-modal" class="mb-3 h5 block text-darker hover:cursor-pointer">City Camp - Lower Quarry</label>
+                <p class="card-description mb-4">
+                  <li>2-4 pax</li>
+                  <li>2 Rooms</li>
+                  <li>2 Double Deck</li>
+                  <li>Living Room</li>
+                  <li>Television</li>
+                  <li>Rice Cooker</li>
+                  <li>Wifi</li>
+                  <li>Bathroom with Shower</li>
+                  <li>Parking Space</li>
+                  <li>10 Mins to Burnham Park and Market</li>
+                </p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        
+        <!-- modal -->
+        <!-- t-1-modal -->
+        <input type="checkbox" id="t-1-modal" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box w-11/12 max-w-5xl">
+            <div class="w-full">
+              <label for="t-1-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+              <div class="text-center">
+                <h3 class="text-lg font-bold text-yellow-500">- Transient 1 -</h3>
+                <h4 class="text-xl font-bold text-slate-900">City Camp - Lower Quarry</h4>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8 flex justify-center flex-wrap">
+              <!-- carousel -->
+              <div class="w-full my-8 mx-8">
+                <div class="carousel w-full">
+                  <div id="slidet11" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-1/t-1-1.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet14" class="btn btn-circle">❮</a>
+                      <a href="#slidet12" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet12" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-1/t-1-2.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet11" class="btn btn-circle">❮</a>
+                      <a href="#slidet13" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet13" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-1/t-1-3.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet12" class="btn btn-circle">❮</a>
+                      <a href="#slidet14" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet14" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-1/t-1-4.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet13" class="btn btn-circle">❮</a>
+                      <a href="#slidet11" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="w-full mx-8">
+                <div class="h-full md:w-[80%] flex flex-col justify-center">
+                  <p class="card-description">
+                    <li>1-2 pax</li>
+                    <li>1 Bed</li>
+                    <li>2 Chairs</li>
+                    <li>1 TV</li>
+                    <li>1 Cabinet</li>
+                    <li>Kitchen Sink</li>
+                    <li>Kitchen Cabinet</li>
+                    <li>Electric Fan</li>
+                    <li>Bathroom with Hot & Cold Shower</li>
+                    <li>Wifi</li>
+                    <li>10 Mins to Burnham Park and Market</li>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- form -->
+            <div class="mt-20">
+              <div class="text-center">
+                <h3 class="text-xl font-bold text-slate-900">- Reservation Form -</h3>
+              </div>
+              <div class="flex items-center justify-center p-12">
+                <div class="mx-auto w-full max-w-[550px]">
+                  <form action="" method="POST">
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Name" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Name
+                          </label>
+                          <input type="text" name="Name" id="Name" placeholder="Name"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Email" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Email
+                          </label>
+                          <input type="email" name="Email" id="Email" placeholder="Email Address"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <label for="guest" class="mb-3 block text-base font-medium text-[#07074D]">
+                        How many guest are you bringing?
+                      </label>
+                      <input type="number" name="guest" id="guest" placeholder="5" min="0"
+                        class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+              
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check in
+                          </label>
+                          <input type="date" name="date-in" id="date-in"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="time" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check out
+                          </label>
+                          <input type="date" name="date-out" id="date-out"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button id="submitBTN" type="submit" onclick="submitForm1(event)"
+                        class="btn w-44 border-0 bg-gradient-to-r from-cyan-900 to-slate-900 text-white">
+                        Submit
+                      </button>
+                    </div>
+                    <div>
+                      <p class="text-slate-900 mt-8">For faster booking transaction, please proceed to our contact page.</p>
+                    </div>
+                    <div>
+                      <div id="custom-alert-1" class="alert alert-success shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span>Your reservation has been submitted! You will be redirected to home.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- t-2-modal -->
+        <input type="checkbox" id="t-2-modal" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box w-11/12 max-w-5xl">
+            <div class="w-full">
+              <label for="t-2-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+              <div class="text-center">
+                <h3 class="text-lg font-bold text-yellow-500">- Transient 2 -</h3>
+                <h4 class="text-xl font-bold text-slate-900">Engineers Hill</h4>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8 flex justify-center flex-wrap">
+              <!-- carousel -->
+              <div class="w-full my-8 mx-8">
+                <div class="carousel w-full">
+                  <div id="slidet21" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-2/t-2-1.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet23" class="btn btn-circle">❮</a>
+                      <a href="#slidet22" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet22" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-2/t-2-2.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet21" class="btn btn-circle">❮</a>
+                      <a href="#slidet23" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet23" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-2/t-2-3.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet22" class="btn btn-circle">❮</a>
+                      <a href="#slidet21" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="w-full mx-8">
+                <div class="h-full md:w-[80%] flex flex-col justify-center">
+                  <p class="card-description">
+                    <li>2-3 pax</li>
+                    <li>Refrigerator</li>
+                    <li>Television</li>
+                    <li>Electric Fan</li>
+                    <li>1 Double Deck Bed</li>
+                    <li>1 Extra Foam</li>
+                    <li>Bathroom with Shower</li>
+                    <li>Wifi</li>
+                    <li>Parking Space</li>
+                    <li>15-20 Mins to Burnham Park and Market</li>
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+
+            <!-- form -->
+            <div class="mt-20">
+              <div class="text-center">
+                <h3 class="text-xl font-bold text-slate-900">- Reservation Form -</h3>
+              </div>
+              <div class="flex items-center justify-center p-12">
+                <div class="mx-auto w-full max-w-[550px]">
+                  <form action="" method="POST">
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Name" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Name
+                          </label>
+                          <input type="text" name="Name" id="Name" placeholder="Name"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Email" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Email
+                          </label>
+                          <input type="email" name="Email" id="Email" placeholder="Email Address"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <label for="guest" class="mb-3 block text-base font-medium text-[#07074D]">
+                        How many guest are you bringing?
+                      </label>
+                      <input type="number" name="guest" id="guest" placeholder="5" min="0"
+                        class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+            
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check in
+                          </label>
+                          <input type="date" name="date-in" id="date-in"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="time" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check out
+                          </label>
+                          <input type="date" name="date-out" id="date-out"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button id="submitBTN" type="submit" onclick="submitForm2(event)"
+                        class="btn w-44 border-0 bg-gradient-to-r from-cyan-900 to-slate-900 text-white">
+                        Submit
+                      </button>
+                    </div>
+                    <div>
+                      <p class="text-slate-900 mt-8">For faster booking transaction, please proceed to our contact page.</p>
+                    </div>
+                    <div>
+                      <div id="custom-alert-2" class="alert alert-success shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span>Your reservation has been submitted! You will be redirected to home.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- t-3-modal -->
+        <input type="checkbox" id="t-3-modal" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box w-11/12 max-w-5xl">
+            <div class="w-full">
+              <label for="t-3-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+              <div class="text-center">
+                <h3 class="text-lg font-bold text-yellow-500">- Transient 3 -</h3>
+                <h4 class="text-xl font-bold text-slate-900">City Camp - Upper Quarry</h4>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8 flex justify-center flex-wrap">
+              <!-- carousel -->
+              <div class="w-full my-8 mx-8">
+                <div class="carousel w-full">
+                  <div id="slidet31" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-3/t-3-1.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet34" class="btn btn-circle">❮</a>
+                      <a href="#slidet32" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet32" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-3/t-3-2.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet31" class="btn btn-circle">❮</a>
+                      <a href="#slidet33" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet33" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-3/t-3-3.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet32" class="btn btn-circle">❮</a>
+                      <a href="#slidet34" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet34" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-3/t-3-4.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet33" class="btn btn-circle">❮</a>
+                      <a href="#slidet31" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="w-full mx-8">
+                <div class="h-full md:w-[80%] flex flex-col justify-center">
+                  <p class="card-description">
+                    <li>3-8 pax</li>
+                    <li>2 Rooms</li>
+                    <li>1 Double Deck</li>
+                    <li>1 Extra Foam</li>
+                    <li>3 Beds</li>
+                    <li>Television</li>
+                    <li>Coffee Bar</li>
+                    <li>Kitchen</li>
+                    <li>Wifi</li>
+                    <li>Bathroom with Shower</li>
+                    <li>10 Mins to Burnham Park and Market</li>
+                  </p>
+                </div>
+              </div>
+            
+            </div>
+
+            <!-- form -->
+            <div class="mt-20">
+              <div class="text-center">
+                <h3 class="text-xl font-bold text-slate-900">- Reservation Form -</h3>
+              </div>
+              <div class="flex items-center justify-center p-12">
+                <div class="mx-auto w-full max-w-[550px]">
+                  <form action="" method="POST">
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Name" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Name
+                          </label>
+                          <input type="text" name="Name" id="Name" placeholder="Name"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Email" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Email
+                          </label>
+                          <input type="email" name="Email" id="Email" placeholder="Email Address"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <label for="guest" class="mb-3 block text-base font-medium text-[#07074D]">
+                        How many guest are you bringing?
+                      </label>
+                      <input type="number" name="guest" id="guest" placeholder="5" min="0"
+                        class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+            
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check in
+                          </label>
+                          <input type="date" name="date-in" id="date-in"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="time" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check out
+                          </label>
+                          <input type="date" name="date-out" id="date-out"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button id="submitBTN" type="submit" onclick="submitForm3(event)"
+                        class="btn w-44 border-0 bg-gradient-to-r from-cyan-900 to-slate-900 text-white">
+                        Submit
+                      </button>
+                    </div>
+                    <div>
+                      <p class="text-slate-900 mt-8">For faster booking transaction, please proceed to our contact page.</p>
+                    </div>
+                    <div>
+                      <div id="custom-alert-3" class="alert alert-success shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span>Your reservation has been submitted! You will be redirected to home.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- t-4-modal -->
+        <input type="checkbox" id="t-4-modal" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box w-11/12 max-w-5xl">
+            <div class="w-full">
+              <label for="t-4-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+              <div class="text-center">
+                <h3 class="text-lg font-bold text-yellow-500">- Transient 4 -</h3>
+                <h4 class="text-xl font-bold text-slate-900">City Camp - Lower Quarry</h4>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8 flex justify-center flex-wrap">
+              <!-- carousel -->
+              <div class="w-full my-8 mx-8">
+                <div class="carousel w-full">
+                  <div id="slidet41" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-4/t-4-1.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet44" class="btn btn-circle">❮</a>
+                      <a href="#slidet42" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet42" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-4/t-4-2.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet41" class="btn btn-circle">❮</a>
+                      <a href="#slidet43" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet43" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-4/t-4-3.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet42" class="btn btn-circle">❮</a>
+                      <a href="#slidet44" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                  <div id="slidet44" class="carousel-item relative w-full">
+                    <img src="./assets/img/t-4/t-4-4.png" class="object-cover rounded-xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slidet43" class="btn btn-circle">❮</a>
+                      <a href="#slidet41" class="btn btn-circle">❯</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- description -->
+              <div class="w-full mx-8">
+                <div class="h-full md:w-[80%] flex flex-col justify-center">
+                  <p class="card-description">
+                    <li>2-4 pax</li>
+                    <li>2 Rooms</li>
+                    <li>2 Double Deck</li>
+                    <li>Living Room</li>
+                    <li>Television</li>
+                    <li>Rice Cooker</li>
+                    <li>Wifi</li>
+                    <li>Bathroom with Shower</li>
+                    <li>Parking Space</li>
+                    <li>10 Mins to Burnham Park and Market</li>
+                  </p>
+                </div>
+              </div>
+        
+            </div>
+
+            <!-- form -->
+            <div class="mt-20">
+              <div class="text-center">
+                <h3 class="text-xl font-bold text-slate-900">- Reservation Form -</h3>
+              </div>
+              <div class="flex items-center justify-center p-12">
+                <div class="mx-auto w-full max-w-[550px]">
+                  <form action="" method="POST">
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Name" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Name
+                          </label>
+                          <input type="text" name="Name" id="Name" placeholder="Name"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="Email" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Email
+                          </label>
+                          <input type="email" name="Email" id="Email" placeholder="Email Address"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <label for="guest" class="mb-3 block text-base font-medium text-[#07074D]">
+                        How many guest are you bringing?
+                      </label>
+                      <input type="number" name="guest" id="guest" placeholder="5" min="0"
+                        class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+            
+                    <div class="-mx-3 flex flex-wrap">
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check in
+                          </label>
+                          <input type="date" name="date-in" id="date-in"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                      <div class="w-full px-3 sm:w-1/2">
+                        <div class="mb-5">
+                          <label for="time" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Check out
+                          </label>
+                          <input type="date" name="date-out" id="date-out"
+                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button id="submitBTN" type="submit" onclick="submitForm4(event)"
+                        class="btn w-44 border-0 bg-gradient-to-r from-cyan-900 to-slate-900 text-white">
+                        Submit
+                      </button>
+                    </div>
+                    <div>
+                      <p class="text-slate-900 mt-8">For faster booking transaction, please proceed to our contact page.</p>
+                    </div>
+                    <div>
+                      <div id="custom-alert-4" class="alert alert-success shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span>Your reservation has been submitted! You will be redirected to home.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- reminder -->
+    <section class="p-36 bg-[#ececec]">
+      <div class="flex justify-center text-center">
+        <p class="text-slate-900">For faster booking transaction, please proceed to our contact page.</p>
+      </div>
+    </section>
 
 
     <!-- Back to top button -->
@@ -85,7 +807,7 @@
     <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-    
+
     
     <footer class="footer p-10 bg-gradient-to-r from-cyan-900 to-slate-900 text-neutral-content">
       <div>
@@ -135,53 +857,12 @@
       </div>
     </footer>
     
-    
-    <!-- <script src="https://loopple.s3.eu-west-3.amazonaws.com/soft-ui-design-system/js/core/bootstrap.min.js"
-          type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/soft-ui-design-system/assets/js/soft-design-system.min.js?v=1.0.5"
-          type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/countup.min.js"
-          type="text/javascript"></script>
-        <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/flatpickr.min.js"></script>
-        <script>
-          if (document.getElementById("state1")) {
-            const countUp = new CountUp("state1", document.getElementById("state1").getAttribute("countTo"));
-            if (!countUp.error) {
-              countUp.start();
-            } else {
-              console.error(countUp.error);
-            }
-          }
-          if (document.getElementById("state2")) {
-            const countUp1 = new CountUp("state2", document.getElementById("state2").getAttribute("countTo"));
-            if (!countUp1.error) {
-              countUp1.start();
-            } else {
-              console.error(countUp1.error);
-            }
-          }
-          if (document.getElementById("state3")) {
-            const countUp2 = new CountUp("state3", document.getElementById("state3").getAttribute("countTo"));
-            if (!countUp2.error) {
-              countUp2.start();
-            } else {
-              console.error(countUp2.error);
-            };
-          }
-    
-          if (document.querySelector('.datepicker-1')) {
-            flatpickr('.datepicker-1', {
-            }); // flatpickr
-          }
-    
-          if (document.querySelector('.datepicker-2')) {
-            flatpickr('.datepicker-2', {
-            }); // flatpickr
-          }
-        </script>
-        <script src="./assets/js/loopple/loopple.js"></script> -->
-        <script src="js/behavior.js"></script>
-        <script src="js/messenger.js"></script>
-      </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/behavior.js"></script>
+    <script src="js/messenger.js"></script>
+  </body>
   
 </html>

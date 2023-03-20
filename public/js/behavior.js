@@ -99,3 +99,114 @@ $(window).ready(function () {
 	$("#sButton1").addClass("bg-slate-900");
 	loopSlider();
 });
+
+//submit button
+//show custom alert 1
+// Initial Custom Alert
+document.getElementById("custom-alert-1").style.opacity = "0";
+document.getElementById("custom-alert-1").style.display = "none";
+function submitForm1(event) {
+	event.preventDefault(); // Prevent the form from submitting normally
+	// Show the alert box with a transition
+	document.getElementById("custom-alert-1").style.display = "block";
+	document.getElementById("custom-alert-1").style.transition =
+		"opacity 0.5s ease-in-out";
+	document.getElementById("custom-alert-1").style.opacity = "1";
+
+	// Set a timeout to hide the custom alert after 5 seconds
+	setTimeout(function () {
+		document.getElementById("custom-alert-1").style.opacity = "0";
+		setTimeout(function () {
+			document.getElementById("custom-alert-1").style.display = "none";
+			location.href = "index.html";
+		}, 500);
+	}, 5000); // 5000 milliseconds = 5 seconds
+}
+
+//show custom alert 2
+// Initial Custom Alert
+document.getElementById("custom-alert-2").style.opacity = "0";
+document.getElementById("custom-alert-2").style.display = "none";
+function submitForm2(event) {
+	event.preventDefault(); // Prevent the form from submitting normally
+	// Show the alert box with a transition
+	document.getElementById("custom-alert-2").style.display = "block";
+	document.getElementById("custom-alert-2").style.transition =
+		"opacity 0.5s ease-in-out";
+	document.getElementById("custom-alert-2").style.opacity = "1";
+
+	// Set a timeout to hide the custom alert after 5 seconds
+	setTimeout(function () {
+		document.getElementById("custom-alert-2").style.opacity = "0";
+		setTimeout(function () {
+			document.getElementById("custom-alert-2").style.display = "none";
+			location.href = "index.html";
+		}, 500);
+	}, 5000); // 5000 milliseconds = 5 seconds
+}
+
+//show custom alert 1
+// Initial Custom Alert
+document.getElementById("custom-alert-3").style.opacity = "0";
+document.getElementById("custom-alert-3").style.display = "none";
+function submitForm3(event) {
+	event.preventDefault(); // Prevent the form from submitting normally
+	// Show the alert box with a transition
+	document.getElementById("custom-alert-3").style.display = "block";
+	document.getElementById("custom-alert-3").style.transition =
+		"opacity 0.5s ease-in-out";
+	document.getElementById("custom-alert-3").style.opacity = "1";
+
+	// Set a timeout to hide the custom alert after 5 seconds
+	setTimeout(function () {
+		document.getElementById("custom-alert-3").style.opacity = "0";
+		setTimeout(function () {
+			document.getElementById("custom-alert-3").style.display = "none";
+			location.href = "index.html";
+		}, 500);
+	}, 5000); // 5000 milliseconds = 5 seconds
+}
+
+//show custom alert 4
+// Initial Custom Alert
+document.getElementById("custom-alert-4").style.opacity = "0";
+document.getElementById("custom-alert-4").style.display = "none";
+function submitForm4(event) {
+	event.preventDefault(); // Prevent the form from submitting normally
+	// Show the alert box with a transition
+	document.getElementById("custom-alert-4").style.display = "block";
+	document.getElementById("custom-alert-4").style.transition =
+		"opacity 0.5s ease-in-out";
+	document.getElementById("custom-alert-4").style.opacity = "1";
+
+	// Set a timeout to hide the custom alert after 5 seconds
+	setTimeout(function () {
+		document.getElementById("custom-alert-4").style.opacity = "0";
+		setTimeout(function () {
+			document.getElementById("custom-alert-4").style.display = "none";
+			location.href = "index.html";
+		}, 500);
+	}, 5000); // 5000 milliseconds = 5 seconds
+}
+
+//show custom alert default
+// Initial Custom Alert
+document.getElementById("custom-alert").style.opacity = "0";
+document.getElementById("custom-alert").style.display = "none";
+function submitForm(event) {
+	event.preventDefault(); // Prevent the form from submitting normally
+	// Show the alert box with a transition
+	document.getElementById("custom-alert").style.display = "block";
+	document.getElementById("custom-alert").style.transition =
+		"opacity 0.5s ease-in-out";
+	document.getElementById("custom-alert").style.opacity = "1";
+
+	// Set a timeout to hide the custom alert after 5 seconds
+	setTimeout(function () {
+		document.getElementById("custom-alert").style.opacity = "0";
+		setTimeout(function () {
+			document.getElementById("custom-alert").style.display = "none";
+			location.href = "index.html";
+		}, 500);
+	}, 5000); // 5000 milliseconds = 5 seconds
+}
